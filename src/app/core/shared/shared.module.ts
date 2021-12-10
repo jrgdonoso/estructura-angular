@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 
 import {HttpClientModule} from '@angular/common/http'
 import { NotFoundComponent } from './components/not-found.component';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @NgModule({
     imports: [
         HttpClientModule,
-        RouterModule
+        RouterModule,
+        MatTabsModule
     ],
     declarations: [
         NotFoundComponent
@@ -15,7 +18,8 @@ import { NotFoundComponent } from './components/not-found.component';
     exports: [
         HttpClientModule,
         NotFoundComponent,
-        RouterModule
+        RouterModule,
+        MatTabsModule
     ],
     providers: []
 })
